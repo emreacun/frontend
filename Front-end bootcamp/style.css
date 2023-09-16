@@ -7,6 +7,9 @@ Version :   v.1.0
 
  /* ================================================================= */
  /* Root */
+ :root{
+    --templateBgColor: rgb(61, 61, 61);
+ }
 
  /* ================================================================= */
  /* Common  Property */
@@ -17,13 +20,17 @@ Version :   v.1.0
  }
 
 html{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     position: relative;
+}
+
+d-flex {
+    font-size: 10px;
 }
 
 a{
@@ -97,6 +104,12 @@ i{
 }
 
 /* ================================================================= */
+ /* Navbar */
+.dark_mode{
+    background-color: var(--templateBgColor);
+    color: #ffffff;
+}
+
  /* Header */
  header {
     background-image: url("img/nightcity.jpg");
@@ -104,6 +117,13 @@ i{
     background-size: cover;
     background-position: 50% 50%;
     z-index: -1;
-    height: 60vh;
-    padding-top: 4rem;
+    height: 80vh;
+    padding-top: 5rem;
  }
+
+  /* Footer */
+  footer {
+    color: white;
+    min-height: 15rem;
+    width: auto;
+  }

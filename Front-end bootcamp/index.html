@@ -27,6 +27,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <!-- external CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -54,23 +58,24 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              <i class="fa-solid fa-user fa-lg text-primary""></i>
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+            <ul class=" dropdown-menu">
+          <li><a class="dropdown-item" href="#">Login</a></li>
+          <li><a class="dropdown-item" href="#">Register</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon fa-xl"></i></button>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Arama için..." aria-label="Search">
+          <input id="tags" class="form-control me-2" type="search" placeholder="Arama için..." aria-label="Search">
           <button class="btn btn-primary" type="submit">Ara</button> <!-- btn-outline-success -->
         </form>
       </div>
@@ -83,7 +88,7 @@
     <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Kişisel Sayfama Hoşgeldiniz}+h4{HTML5 CSS3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success -->
     <div class="text-white">
       <div class="container text-center">
-        <div class="p-5 text-uppercase display-4">FRONTEND EĞİTİMİMİZE HOŞGELDİNİZ</div>
+        <div class="p-5 text-uppercase display-4">FRONT-END DEVELOPER BOOTCAMP</div>
         <h4>HTML5 - CSS3 - JS - React</h4>
         <a href="" class="btn btn-primary">Linkedin</a>
         <a href="" class="btn btn-success">Blog</a>
@@ -95,12 +100,39 @@
 
   <!-- start main codes -->
   <main id="main_id">
-
+    <section>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ab animi repellendus laudantium cum incidunt
+        minus earum facilis reprehenderit fuga, nostrum at dolorum amet ut? Maxime nam beatae eveniet veniam.
+        Vero neque praesentium corporis reprehenderit, sapiente quam nam sed consequuntur, voluptatibus assumenda magni
+        reiciendis voluptatum rerum perferendis asperiores! Dolore atque illum, officia quis ad nobis asperiores
+        suscipit molestiae optio eligendi!
+        Sed, quod eius animi repellendus molestias optio? Tempore veritatis in id debitis doloremque magnam et provident
+        exercitationem, deleniti dolore mollitia ipsum culpa eius, deserunt dignissimos similique. Reprehenderit
+        temporibus veritatis voluptates!
+        Ex doloremque voluptates at enim assumenda expedita explicabo necessitatibus eos in eligendi odio atque eius
+        nostrum quis neque unde ad facere ea, ipsam commodi! Ad eius beatae modi deleniti minima?
+        Quis sequi aliquid assumenda possimus! Quae omnis nesciunt impedit, quo aliquid nisi magni similique velit
+        accusantium hic sapiente explicabo cupiditate reprehenderit, ipsum, consectetur libero doloribus repudiandae
+        pariatur asperiores corrupti voluptatum?
+        Illum provident ipsam voluptatum rem animi alias possimus deleniti eos, voluptatem, numquam aperiam maxime in?
+        Saepe magnam quod eveniet assumenda veritatis consequatur officiis et iure vel dignissimos, soluta neque
+        molestiae.
+        Assumenda illum aliquam repudiandae labore fugiat ullam beatae ad repellat aut odio doloribus sit adipisci nemo
+        aliquid perferendis, corporis, quos quia dolores dolorem natus qui molestiae alias accusantium facere. Quae?
+        Repellendus itaque nemo at veniam ratione accusamus explicabo qui quidem unde minus adipisci eum laudantium,
+        modi esse sequi. Voluptates optio dicta nam neque harum repellat quidem ipsum error. At, alias.
+      </p>
+    </section>
   </main>
   <!-- end main codes -->
 
   <!-- start footer codes -->
-  <footer id="footer_id"></footer>
+  <footer id="footer_id" class="bg-dark">
+    <div class="text-center p-5" id="copy_right">
+      2022 - <span id="date_id"></span> &copy; Bütün hakları saklıdır!
+    </div>
+  </footer>
   <!-- end footer codes -->
 
   <!-- all end codes -->
