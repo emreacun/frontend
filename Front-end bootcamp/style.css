@@ -127,3 +127,15 @@ i{
     min-height: 15rem;
     width: auto;
   }
+
+  /* Back Top */
+  #back_top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  #back_top:hover{
+    opacity: 0.9;
+    transition: 0.2s all;
+  }
