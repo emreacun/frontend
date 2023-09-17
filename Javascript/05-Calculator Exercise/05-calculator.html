@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h3>Calculator</h3>
+    <p>
+        <button onclick="calculatation += 1; console.log(calculatation)">
+            1
+        </button>
+        <button onclick="calculatation += 2; console.log(calculatation)">
+            2
+        </button>
+        <button onclick="calculatation += 3; console.log(calculatation)">
+            3
+        </button>
+        <button onclick="calculatation += ' + '; console.log(calculatation)">
+            +
+        </button>
+    </p>
+
+    <p>
+        <button onclick="calculatation += 4; console.log(calculatation)">
+            4
+        </button>
+        <button onclick="calculatation += 5; console.log(calculatation)">
+            5
+        </button>
+        <button onclick="calculatation += 6; console.log(calculatation)">
+            6
+        </button>
+        <button onclick="calculatation += ' - '; console.log(calculatation)">
+            -
+        </button>
+    </p>
+
+    <p>
+        <button onclick="calculatation += 7; console.log(calculatation)">
+            7
+        </button>
+        <button onclick="calculatation += 8; console.log(calculatation)">
+            8
+        </button>
+        <button onclick="calculatation += 9; console.log(calculatation)">
+            9
+        </button>
+        <button onclick="calculatation += ' * '; console.log(calculatation)">
+            *
+        </button>
+    </p>
+
+    <p>
+        <button onclick="calculatation += 0; console.log(calculatation)">
+            0
+        </button>
+        <button onclick="calculatation += '.'; console.log(calculatation)">
+            .
+        </button>
+        <button onclick="eval(calculatation = eval(calculatation)); console.log(calculatation)">
+            =
+        </button>
+        <button onclick="calculatation += ' / '; console.log(calculatation)">
+            /
+        </button>
+    </p>
+
+    <button
+        style="color: white; background-color: red; border: none; box-shadow: 0px 0px 2px 0px #000; text-transform: uppercase;"
+        onclick="calculatation = ''; console.log('Cleared!')">Clear</button>
+
+    <p>
+        Bu calculator <strong>Emre Acun #fLu</strong> tarafından kodlanmıştır.
+        <span><br><i></i></span>
+    </p>
+    <script>
+        let calculatation = '';
+    </script>
+</body>
+
+</html>

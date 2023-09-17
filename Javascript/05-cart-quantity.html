@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+
+<body>
+    <p>Cart Quantity</p>
+    <button class="show-quantity" onclick="console.log(`Cart quantity: ${cartQuantity}`)">
+        Show Quantity
+    </button>
+    <button class="add-to-cart" onclick="
+    cartQuantity++;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        Add to Cart
+    </button>
+    <button class="plus-two" onclick="
+    cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        +2
+    </button>
+    <button class="plus-three" onclick="
+    cartQuantity += 3;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        +3
+    </button>
+
+    <button class="plus-four" onclick="
+    cartQuantity += 4;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        +4
+    </button>
+
+    <button class="plus-five" onclick="
+    cartQuantity += 5;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        +5
+    </button>
+
+    <button class="remove" onclick="
+    cartQuantity--;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        -1
+    </button>
+
+    <button class="eksi-iki" onclick="
+    cartQuantity -= 2;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        -2
+    </button>
+
+    <button class="eksi-uc" onclick="
+    cartQuantity -= 3;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">
+        -3
+    </button>
+
+    <button class="reset-cart" onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset');
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        Reset Cart
+    </button>
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+
+</html>
