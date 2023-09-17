@@ -112,13 +112,18 @@ i{
 
  /* Header */
  header {
-    background-image: url("img/nightcity.jpg");
+    background-image: url("img/developer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     z-index: -1;
     height: 60vh;
     padding-top: 5rem;
+    margin-top: 10rem;
+ }
+
+ input .tags {
+    color: white;
  }
 
   /* Footer */
