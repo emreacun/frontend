@@ -64,6 +64,23 @@ i{
     clear: both;
 }
 
+.myHeading {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    text-shadow: 0.4px -0.9px rgba(0, 0, 0, 0.9);
+    opacity: 0.7;
+}
+
+hr {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #0d6efd;
+    opacity: 0.1;
+    margin-bottom: 2rem;
+}
+
 /* my special Size */
 .fSize1{
     font-size: 1rem; /* 15px*1 anlamına gelir */
@@ -82,8 +99,8 @@ i{
 }
 
 /* Line-clamp */
-.line-clamp5{
-    -webkit-line-clamp: 5;
+.line-clamp4{
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -118,13 +135,21 @@ i{
     background-position: 50% 50%;
     z-index: -1;
     height: 60vh;
-    padding-top: 5rem;
-    margin-top: 10rem;
+    padding-top: 3rem;
  }
 
- input .tags {
-    color: white;
- }
+  /* Main ID */
+#messages {
+margin-top: 2rem;
+margin-bottom: 3rem;
+
+}
+
+#messages i {
+    color: #0d6efd;
+    font-size: 5rem;
+}
+
 
   /* Footer */
   footer {
