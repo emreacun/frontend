@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>One Page</title>
+    <!-- for language -->
+    <meta charset="utf-8" />
+
+    <!-- for Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- SEO -->
+    <meta name="author" content="Emre Acun" />
+    <meta name="description" content="for one page" />
+    <meta name="keyword" content="HTML5, CSS3, JS, REACT, BOOTSTRAP5" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar_id">
+    <noscript>Bu browser javascripti desteklemiyor.</noscript>
+    <!-- all start codes -->
+
+    <!-- start nav codes -->
+    <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top">
+        <div class="container"> <!-- container-fluid -->
+            <a class="navbar-brand" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i> fLu <i
+                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <!-- buttonda redirect yap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#anasayfa">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourworks">Çalışmalarımız</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news_paper">Yeni Haberler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex me-auto" role="search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama için..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-light " type="submit">Ara</button> <!-- btn-outline-success -->
+                </form>
+
+                <ul id="ara_ul" class="mt-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-user fa-xl fa-al text-light"></i>
+                        </a>
+                        <ul class=" dropdown-menu">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                    data-bs-target="#registerId">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul id="ara_ul" class="mt-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-language fa-2xl text-light"></i>
+                        </a>
+                        <ul class=" dropdown-menu">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#">Turkish</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="me-auto">
+                    <li class="nav-item mt-3">
+                        <button class="btn text-light border-light" onclick="darkModu()">
+                            <i class="fa-solid fa-moon fa-lg"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav codes -->
+
+    <!-- Login  -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Giriş</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form1Example1" class="form-control" />
+                            <label class="form-label" for="form1Example1">Email adresi</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form1Example2" class="form-control" />
+                            <label class="form-label" for="form1Example2">Şifre</label>
+                        </div>
+
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                            <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="form1Example3"
+                                        checked />
+                                    <label class="form-check-label" for="form1Example3"> Beni hatırla </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Şifreni mi unuttun?</a>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block">Giriş yap</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register  -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="registerId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Kayıt ol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Username input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form2Example1" class="form-control" />
+                            <label class="form-label" for="form2Example1">Kullanıcı adınız</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form2Example2" class="form-control" />
+                            <label class="form-label" for="form2Example2">Şifrenizi girin</label>
+                        </div>
+
+                        <!-- Re-password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form2Example3" class="form-control" />
+                            <label class="form-label" for="form2Example3">Şifrenizi tekrar girin</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form2Example4" class="form-control" />
+                            <label class="form-label" for="form2Example4">Email adresi</label>
+                        </div>
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block">Kayıt ol</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start main codes -->
+    <main id="main_detail">
+        <!-- Detail page start -->
+        <br><br><br><br>
+        <div class="container">
+            <section>
+                <h1 id="yazi_baslik_h1" class="blogmain text-primary mt-lg-5 text-center mb-3"><a href="#">Front-End
+                        Developer Nasıl
+                        Olunur?</a></h1>
+                <br>
+                <div class="row">
+                    <div class="detail_image mb-3">
+                        <img src="img/code.jpg" alt="" srcset="" class="">
+                    </div>
+                    <div class="detail_text_info_area mb-2 mt-2">
+                        <i class="fa-solid fa-folder fa-lg mb-3 text-primary ps-3"><span
+                                class="text-muted text-dark m-2">genel</span></i>
+                        <i class="fa-solid fa-user fa-lg mb-3 text-primary ps-3"><span
+                                class="text-muted text-dark m-2">Emre
+                                Acun</span></i>
+                        <i class="fa-solid fa-clock fa-lg mb-3 text-primary ps-3"><span
+                                class="text-muted text-dark m-2">19.09.2023</span></i>
+                    </div>
+                    <h3 class="blogmain mb-3"><a class="text-dark" href="#">Front-End Developer Nasıl
+                            Olunur?</a></h3>
+                    <div class="detail_text col-md-12">
+                        <p class="text-dark">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eaque fuga voluptate corrupti
+                            ullam, quia facilis velit, veniam tempore, dicta odio quae inventore reprehenderit
+                            dignissimos dolor in maiores sit. Explicabo, unde.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- Detail page end -->
+        <hr>
+        <!-- Google Map - Iletisim start -->
+        <section id="contact_me">
+            <div class="container">
+                <div class="row">
+                    <h2 id="contact_me" class="myHeading mt-4">
+                        Bana Ulaşın
+                    </h2>
+                    <div class="col-md-6 mb-3">
+                        <div class=" card">
+                            <h3 class="text-primary text-uppercase text-center mt-4">Konum</h3>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe
+                                        src="https://maps.google.com/maps?q=ba%C5%9Fak%C5%9Fehir%20cihangir%20sokak&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                        frameborder="0" scrolling="no" style="width: 640px; height: 350px;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <h3 class="text-primary text-uppercase text-center mt-4">Bana Yazın</h3>
+                            <center>
+                                <form>
+                                    <input type="text" class="form-control mt-5 m-3 w-50" placeholder="Adınız">
+                                    <input type="text" class="form-control m-3 w-50" placeholder="Soyadınız">
+                                    <input type="email" class="form-control m-3 w-50" placeholder="Email adresiniz">
+                                    <input type="text" class="contact_form form-control m-3 w-50"
+                                        placeholder="Mesajınız">
+                                    <div class="btn btn-primary mb-3">Gönder</div>
+                                </form>
+                            </center>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Google Map - Iletisim end -->
+
+    </main>
+
+    <!-- end main codes -->
+
+    <!-- start footer codes -->
+    <footer id="footer_id" class="bg-dark mt-4">
+        <div class="text-center p-5" id="copy_right">
+            2022 - <span id="date_id"></span> &copy; Bütün hakları saklıdır!
+        </div>
+    </footer>
+    <!-- end footer codes -->
+
+    <a href="#yazi_baslik_h1" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+
+    <!-- all end codes -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- external JS -->
+    <script src="template.js">
+
+    </script>
+</body>
+
+</html>

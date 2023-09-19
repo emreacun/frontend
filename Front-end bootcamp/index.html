@@ -40,7 +40,7 @@
   <!-- all start codes -->
 
   <!-- start nav codes -->
-  <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+  <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top">
     <div class="container"> <!-- container-fluid -->
       <a class="navbar-brand" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i> fLu <i
           class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -52,33 +52,59 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+            <a class="nav-link active" aria-current="page" href="#anasayfa">Anasayfa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#ourworks">Çalışmalarımız</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news_paper">Yeni Haberler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+
+        </ul>
+
+        <form class="d-flex me-auto" role="search">
+          <input id="tags" class="form-control me-2" type="search" placeholder="Arama için..." aria-label="Search">
+          <button class="btn btn-outline-light " type="submit">Ara</button> <!-- btn-outline-success -->
+        </form>
+
+        <ul id="ara_ul" class="mt-3">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-user fa-lg text-primary""></i>
+              <i class="fa-solid fa-user fa-xl fa-al text-light"></i>
             </a>
             <ul class=" dropdown-menu">
-          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
-          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerId">Register</a></li>
-        </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-        </ul>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon fa-xl"></i></button>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerId">Register</a></li>
+            </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input id="tags" class="form-control me-2" type="search" placeholder="Arama için..." aria-label="Search">
-          <button class="btn btn-primary" type="submit">Ara</button> <!-- btn-outline-success -->
-        </form>
+
+        <ul id="ara_ul" class="mt-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-language fa-2xl text-light"></i>
+            </a>
+            <ul class=" dropdown-menu">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#">Turkish</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#">English</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="me-auto">
+          <li class="nav-item mt-3">
+            <button class="btn text-light border-light" onclick="darkModu()">
+              <i class="fa-solid fa-moon fa-lg"></i>
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -187,8 +213,11 @@
     <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Kişisel Sayfama Hoşgeldiniz}+h4{HTML5 CSS3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success -->
     <div class="text-white">
       <div class="container text-center">
-        <div class="p-5 text-uppercase display-4">Front-End Developer Bootcamp</div>
-        <h4>HTML5 - CSS3 - JS - React</h4>
+        <div class="pt-5 mb-2 text-uppercase display-4">First Project <br> Front-end developer</div>
+        <span>
+          <h4>Coded by Emre <b>ACUN</b></h4>
+        </span>
+        <h4 class="mt-5" id="anasayfa">HTML5 - CSS3 - JS - React</h4>
         <a href="" class="btn btn-primary">Linkedin</a>
         <a href="" class="btn btn-success">Blog</a>
         <a href="" class="btn btn-danger">Youtube</a>
@@ -199,9 +228,10 @@
 
   <!-- start main codes -->
   <main id="main_id">
+    <!-- messages start -->
     <section id="messages">
       <div>
-        <h2 class="myHeading">Çalışmalarımız</h2>
+        <h2 id="ourworks" class="myHeading">Çalışmalarımız</h2>
       </div>
       <hr>
       <div class="container">
@@ -245,19 +275,447 @@
         </div>
       </div>
     </section>
+    <!-- Messages ends -->
+
+    <!-- parallax start -->
+    <section id="parallax">
+      <div class="container">
+        <div class="row">
+          <h2 id="about" class="myHeading">Hakkımızda</h2>
+          <p class="line-clamp20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, odit? Iure earum
+            officiis rerum officia odio
+            labore voluptate maiores a illum atque corrupti ad, voluptatum minus error beatae doloribus sapiente?
+            Reiciendis repellat dolor laborum tenetur dicta provident necessitatibus rem quisquam. Praesentium, est
+            placeat? Molestias, illum libero, hic modi sunt accusantium enim cumque praesentium iste voluptatem, sed
+            nemo tenetur iusto blanditiis!
+            Dolorum doloribus, minima dignissimos nobis culpa explicabo provident sapiente, aliquid at aspernatur
+            temporibus, id possimus saepe ullam ab unde! Itaque nisi repudiandae magni porro voluptas tenetur ut alias.
+            Fugit, repellendus.
+            Temporibus, veritatis a atque in laborum aliquam corrupti consequatur dignissimos eum, repellat quam?
+            Assumenda incidunt laudantium quaerat inventore provident iusto dolorum, tenetur ex quisquam alias officiis
+            qui hic architecto repellat?
+            Eligendi maiores ad officiis adipisci dicta, sequi accusantium aliquid labore saepe quos blanditiis dolorum
+            laborum iure itaque ut dolore corrupti beatae animi voluptates at iste dolor qui? Aliquid, rerum
+            consectetur?
+            Neque, obcaecati, debitis repellendus ducimus, praesentium illum quos voluptatibus ab cupiditate temporibus
+            est commodi aspernatur explicabo deleniti! Nesciunt ab neque deserunt! Blanditiis saepe voluptatem ad,
+            adipisci officia praesentium iure dignissimos.
+            Laborum veniam quaerat asperiores nisi. Fugit tenetur, dolor obcaecati illum dolores amet dolore, labore
+            quaerat sint in deleniti fuga nulla, et dignissimos commodi? Recusandae veritatis expedita et? Aliquid,
+            tenetur est!
+            Totam cupiditate, est consequatur ullam similique quia reprehenderit officia aliquam nesciunt quae alias
+            labore voluptatem tempora debitis, distinctio beatae fuga? Nihil officia eum consectetur illo explicabo ut
+            quaerat nulla consequuntur?
+            Laboriosam itaque molestias adipisci in sit sunt, deserunt accusantium culpa minima ab aperiam provident
+            architecto explicabo doloremque incidunt quos. Illo voluptas facere repudiandae deleniti saepe quo provident
+            perspiciatis animi officiis?
+            Incidunt, libero praesentium maiores dolore totam doloribus dolorem aperiam nemo accusantium sit consectetur
+            voluptas odio nesciunt quas dolor est unde a recusandae! Velit inventore sequi id doloribus in dicta
+            adipisci.
+            Officia dolores sequi nam dignissimos ab, accusamus tempore illum. Reiciendis, modi neque ea eum nemo
+            numquam vel totam dignissimos animi minima magnam in. Quisquam, est inventore quis ratione sapiente neque?
+            Itaque ad blanditiis doloremque cumque et, maiores minus adipisci consequuntur laudantium vero molestias
+            voluptatum temporibus illo expedita. Sapiente architecto repellat quam ullam, culpa, consequatur explicabo
+            suscipit et velit voluptates eaque!</p>
+          <a class="btn btn-primary">Daha fazla...</a>
+        </div>
+      </div>
+    </section>
+    <!-- parallax end -->
+
+
+    <!-- newspaper start -->
+    <section id="newspaper">
+      <div class="container">
+        <div class="row">
+          <h2 id="news_paper" class="myHeading">Yeni Haberler</h2>
+          <p class="line-clamp20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, odit? Iure earum
+            officiis rerum officia odio
+            labore voluptate maiores a illum atque corrupti ad, voluptatum minus error beatae doloribus sapiente?
+            Reiciendis repellat dolor laborum tenetur dicta provident necessitatibus rem quisquam. Praesentium, est
+            placeat? Molestias, illum libero, hic modi sunt accusantium enim cumque praesentium iste voluptatem, sed
+            nemo tenetur iusto blanditiis!
+            Dolorum doloribus, minima dignissimos nobis culpa explicabo provident sapiente, aliquid at aspernatur
+            temporibus, id possimus saepe ullam ab unde! Itaque nisi repudiandae magni porro voluptas tenetur ut alias.
+            Fugit, repellendus.
+            Temporibus, veritatis a atque in laborum aliquam corrupti consequatur dignissimos eum, repellat quam?
+            Assumenda incidunt laudantium quaerat inventore provident iusto dolorum, tenetur ex quisquam alias officiis
+            qui hic architecto repellat?
+            Eligendi maiores ad officiis adipisci dicta, sequi accusantium aliquid labore saepe quos blanditiis dolorum
+            laborum iure itaque ut dolore corrupti beatae animi voluptates at iste dolor qui? Aliquid, rerum
+            consectetur?
+            Neque, obcaecati, debitis repellendus ducimus, praesentium illum quos voluptatibus ab cupiditate temporibus
+            est commodi aspernatur explicabo deleniti! Nesciunt ab neque deserunt! Blanditiis saepe voluptatem ad,
+            adipisci officia praesentium iure dignissimos.
+            Laborum veniam quaerat asperiores nisi. Fugit tenetur, dolor obcaecati illum dolores amet dolore, labore
+            quaerat sint in deleniti fuga nulla, et dignissimos commodi? Recusandae veritatis expedita et? Aliquid,
+            tenetur est!
+            Totam cupiditate, est consequatur ullam similique quia reprehenderit officia aliquam nesciunt quae alias
+            labore voluptatem tempora debitis, distinctio beatae fuga? Nihil officia eum consectetur illo explicabo ut
+            quaerat nulla consequuntur?
+            Laboriosam itaque molestias adipisci in sit sunt, deserunt accusantium culpa minima ab aperiam provident
+            architecto explicabo doloremque incidunt quos. Illo voluptas facere repudiandae deleniti saepe quo provident
+            perspiciatis animi officiis?
+            Incidunt, libero praesentium maiores dolore totam doloribus dolorem aperiam nemo accusantium sit consectetur
+            voluptas odio nesciunt quas dolor est unde a recusandae! Velit inventore sequi id doloribus in dicta
+            adipisci.
+            Officia dolores sequi nam dignissimos ab, accusamus tempore illum. Reiciendis, modi neque ea eum nemo
+            numquam vel totam dignissimos animi minima magnam in. Quisquam, est inventore quis ratione sapiente neque?
+            Itaque ad blanditiis doloremque cumque et, maiores minus adipisci consequuntur laudantium vero molestias
+            voluptatum temporibus illo expedita. Sapiente architecto repellat quam ullam, culpa, consequatur explicabo
+            suscipit et velit voluptates eaque!</p>
+          <div class="col-5"></div>
+          <div class="col-4"> <a class="btn btn-outline-danger">Daha fazla...</a></div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- newspaper end -->
+
+    <!-- Blog start -->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <h2 id="blog" class="myHeading mt-4">Blog</h2>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class=" card">
+              <img class="card-img-top" src="./img/workspace-1280538.jpg" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title myHeading">Blog 1</h4>
+                <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam
+                  sapiente enim
+                  ipsum eius vitae vero dolore ab cum temporibus blanditiis, eum, quis quam. Quas laudantium aperiam
+                  minima, laborum odio cupiditate.
+                  Libero reiciendis aliquam cum sint iste nesciunt minima sapiente. Aliquid illo est ea tempore magni,
+                  quam delectus? Eaque tempora modi vel. Inventore in hic necessitatibus neque repellendus veniam
+                  repellat deleniti.
+                  Laboriosam animi ratione consectetur perferendis similique ab iste nostrum optio velit quidem, aliquam
+                  ut. Numquam explicabo sequi voluptatem deserunt quod pariatur doloremque illo natus, architecto, esse
+                  dignissimos tempore illum at?
+                  Saepe totam provident vero cum pariatur suscipit ab accusantium, voluptates impedit quidem? Quam
+                  voluptatibus aut distinctio maiores perspiciatis harum quia inventore animi voluptatum, expedita
+                  necessitatibus commodi debitis hic officiis ducimus!
+                  Nihil tempore atque officia, soluta delectus vero odit perspiciatis quasi quam deserunt iure voluptas
+                  alias quod, animi nostrum inventore tenetur exercitationem voluptates facere? Aspernatur reiciendis
+                  perspiciatis at praesentium exercitationem est.
+                  Pariatur asperiores placeat ex tenetur quibusdam sequi magnam voluptates hic ut nam reprehenderit,
+                  ducimus possimus facere dolore? Totam a sit velit tempore sapiente tenetur error placeat laboriosam
+                  quisquam, esse fugit.
+                  Pariatur voluptatum modi nulla culpa temporibus dolorum, cumque, dolores, quia in nisi beatae. Nisi
+                  nesciunt deserunt sapiente id molestias cum quidem laudantium beatae dolor deleniti quaerat, officia
+                  earum cumque incidunt.
+                  Alias enim, tempora dolore aspernatur atque perferendis iure qui minima. Aspernatur praesentium
+                  repellendus velit, obcaecati excepturi dolore, corrupti provident id, quas iusto voluptas nam ab
+                  possimus. Voluptatibus animi tempora accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- Blog end -->
+
+    <!-- Google Map - Iletisim start -->
+    <section id="contact_me">
+      <div class="container">
+        <div class="row">
+          <h2 id="contact_me" class="myHeading mt-4">
+            Bana Ulaşın
+          </h2>
+          <div class="col-md-6 mb-3">
+            <div class=" card">
+              <h3 class="text-primary text-uppercase text-center mt-4">Konum</h3>
+              <div class="mapouter">
+                <div class="gmap_canvas"><iframe
+                    src="https://maps.google.com/maps?q=ba%C5%9Fak%C5%9Fehir%20cihangir%20sokak&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    frameborder="0" scrolling="no" style="width: 640px; height: 350px;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <h3 class="text-primary text-uppercase text-center mt-4">Bana Yazın</h3>
+              <center>
+                <form>
+                  <input type="text" class="form-control mt-5 m-3 w-50" placeholder="Adınız">
+                  <input type="text" class="form-control m-3 w-50" placeholder="Soyadınız">
+                  <input type="email" class="form-control m-3 w-50" placeholder="Email adresiniz">
+                  <input type="text" class="contact_form form-control m-3 w-50" placeholder="Mesajınız">
+                  <div class="btn btn-primary mb-3">Gönder</div>
+                </form>
+              </center>
+
+            </div>
+          </div>
+
+
+          <!-- Google Map - Iletisim end -->
+
   </main>
 
   <!-- end main codes -->
 
   <!-- start footer codes -->
-  <footer id="footer_id" class="bg-dark">
+  <footer id="footer_id" class="bg-dark mt-4">
     <div class="text-center p-5" id="copy_right">
       2022 - <span id="date_id"></span> &copy; Bütün hakları saklıdır!
     </div>
   </footer>
   <!-- end footer codes -->
 
-  <a href="#navbar_id" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+  <a href="#anasayfa" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
 
   <!-- all end codes -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
